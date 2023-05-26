@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6006c8cd38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Piedra, papel o tijera</title>
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="header__title">Piedra, papel o tijera</h1>
+    </header>
+
+    <main class="main">
+        <h3 class="main__title">El primero en llegar a 5 puntos es el ganador<br><img src="img/trofeo.png" alt="Ilustración de trofeo"></h3>
+        
+        <section class="score">
+            <p>Tus puntos <span id="puntos-user">0</span></p>
+            <p>Puntos del CPU <span id="puntos-cpu">0</span></p>
+        </section>
+
+        <h4 class="header__subtitle" id="text-choose">Elegí: Piedra, papel o tijera</h4>
+        
+        <section class="hand">
+            <div class="hand__player"><img src="img/rock-128px.png" alt="Mano del jugador"></div>
+            <div class="post">Listo?</div>
+            <div class="post-ganaste">Ganaste! <img src="img/trofeo.png" alt=""></div>
+            <div class="post-perdiste">Perdiste! <img src="img/triste.png" alt=""></div>
+            <div class="hand__cpu"><img src="img/rock-128px.png" alt="Mano del CPU"></div>
+        </section>
+
+        <section class="choose">
+            <div class="choose__rock choose-rps">
+                <img src="img/rock.png" alt="Piedra" class="choose__img--rotate" id="rock">
+                <h5>Piedra</h5>
+            </div>
+            <div class="choose__paper choose-rps">
+                <img src="img/paper.png" alt="Papel" class="choose__img--rotate" id="paper">
+                <h5>Papel</h5>
+            </div>
+            <div class="choose__scissors choose-rps">
+                <img src="img/scissors.png" alt="Tijera" class="choose__img--rotate" id="scissor">
+                <h5>Tijera</h5>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h5 class="angel">Ángel Altieri</h5>
+        <div class="redes">
+            <a target="_blank" href="https://www.linkedin.com/in/%C3%A1ngel-valent%C3%ADn-altieri-a319a0256/"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.instagram.com/angel_altieri_/"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcRwPVpftBRMCZRXGwHwNsGzxqhcrRccChDqZScddDpCtsLSDWlMGPlFZlrCnHHPSvdlGhdfg"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.9.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="./jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
