@@ -8,7 +8,7 @@
     --clr-primary: #6F1AB6;
     --clr-secundary: #ECECEC;
     --clr-tertiary: #E7B10A;
-    --clr-foot: #e7ecff;
+    --clr-foot: #ECECEC;;
 }
 
 body {
@@ -17,6 +17,11 @@ body {
     background-color: var(--clr-primary);
     overflow-x: hidden;
 }
+
+a {
+    color: var(--clr-primary);
+}
+
 
 .header {
     display: flex;
@@ -43,6 +48,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
 }
+
 
 .main__title {
     font-size: 1.2rem;
