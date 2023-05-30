@@ -177,3 +177,44 @@ function confeti() {
         origin: { y: 0.6 },
     });
 }
+
+/* DARK MODE */
+
+const btnChange = document.querySelector(".btn-change");
+const circle = document.querySelector(".circle");
+const header = document.querySelector(".header");
+const footer = document.querySelector(".footer");
+const angel = document.querySelector(".angel");
+const links = document.querySelectorAll("a");
+
+let colorPrincipal = "#F47C7C";
+let colorSecundario = "#4D4C7D"
+btnChange.addEventListener("click", () => {
+    btnChange.classList.toggle("active");
+    if(btnChange.classList.contains("active")) {
+        circle.style.right = "0";
+        circle.style.left = "unset";
+        document.body.style.backgroundColor = colorPrincipal;
+        document.body.style.color = colorSecundario;
+        header.style.backgroundColor = colorSecundario;
+        header.style.color = colorPrincipal;
+        footer.style.backgroundColor = colorSecundario;
+        angel.style.color = colorPrincipal;
+        links.forEach(a => {
+            a.style.color = colorPrincipal;
+        })
+    } else {
+        circle.style.right = "unset";
+        circle.style.left = "0";
+        document.body.style.backgroundColor = "var(--clr-primary)";
+        document.body.style.color = "var(--clr-secundary)";
+        header.style.backgroundColor = "var(--clr-secundary)";
+        header.style.color = "var(--clr-primary)";
+        header.style.backgroundColor = "var(--clr-secundary)";
+        footer.style.backgroundColor = "var(--clr-secundary)";
+        angel.style.color = "var(--clr-primary)";
+        links.forEach(a => {
+            a.style.color = "var(--clr-primary)";
+        })
+    }
+})

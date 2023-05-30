@@ -15,6 +15,7 @@ body {
     min-height: 100vh;
     font-family: sans-serif;
     background-color: var(--clr-primary);
+    color: var(--clr-secundary);
     overflow-x: hidden;
 }
 
@@ -31,6 +32,7 @@ a {
     background-color: var(--clr-secundary);
     color: var(--clr-primary);
     border-radius: 0 0 3rem 3rem;
+    position: relative;
 }
 
 .header__title {
@@ -47,6 +49,52 @@ a {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
+    
+}
+
+.change-mode {
+    position: absolute;
+    top: 105%;
+    right: 5%;
+}
+
+.btn-change {
+    background-color: #E7B10A;
+    cursor: pointer;
+    border-radius: 1000px;
+    border: none;
+    outline: none;
+    display: flex;
+    position: relative;
+}
+
+.circle {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #f1f1f1;
+    top:0;
+    left:0;
+    right: unset;
+    border-radius: 100px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
+    transition: .4s ease all;
+}
+
+.active {
+    background-color: #1a1ab6;
+    color: #000;
+    
+}
+
+.sm { /* sun y moon */
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background:none;
+    color: #fff;
 }
 
 
@@ -210,6 +258,10 @@ a {
     align-items: center;
     row-gap: .4rem;
     background-color: var(--clr-foot);
+    color: var(--clr-primary);
+}
+
+.angel {
     color: var(--clr-primary);
 }
 
